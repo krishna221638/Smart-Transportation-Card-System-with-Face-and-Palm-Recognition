@@ -1,0 +1,105 @@
+/* General styling for the register page */
+.register-page {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* Background image container */
+.register-page .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-image: url("../src/assets/help-background-image.png"); /* Use the same background as in Login */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2; /* Low opacity for background */
+}
+
+/* Styling for the register form container */
+.register-container {
+  position: relative;
+  z-index: 1; /* Ensures the form is on top of the background */
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.register-container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #f0f0f0;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the additional links */
+.register-container p {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.register-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-container a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styling to match the layout */
+footer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+}
